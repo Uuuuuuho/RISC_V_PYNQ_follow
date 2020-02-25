@@ -1,0 +1,862 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb 18 18:10:28 2020
+# Process ID: 27510
+# Current directory: /home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.runs/design_1_picorv32_tut_0_0_synth_1
+# Command line: vivado -log design_1_picorv32_tut_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_picorv32_tut_0_0.tcl
+# Log file: /home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.runs/design_1_picorv32_tut_0_0_synth_1/design_1_picorv32_tut_0_0.vds
+# Journal file: /home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.runs/design_1_picorv32_tut_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_picorv32_tut_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_picorv32_tut_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27848 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1797.762 ; gain = 152.613 ; free physical = 10667 ; free virtual = 68489
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_picorv32_tut_0_0' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ip/design_1_picorv32_tut_0_0/synth/design_1_picorv32_tut_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2445]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b1 
+	Parameter ENABLE_FAST_MUL bound to: 1'b1 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi_adapter' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2659]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi_adapter' (1#1) [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2659]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:57]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter LATCHED_MEM_RDATA bound to: 1'b0 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b1 
+	Parameter ENABLE_FAST_MUL bound to: 1'b1 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+	Parameter irq_timer bound to: 0 - type: integer 
+	Parameter irq_ebreak bound to: 1 - type: integer 
+	Parameter irq_buserror bound to: 2 - type: integer 
+	Parameter irqregs_offset bound to: 32 - type: integer 
+	Parameter regfile_size bound to: 32 - type: integer 
+	Parameter regindex_bits bound to: 5 - type: integer 
+	Parameter WITH_PCPI bound to: 1'b1 
+	Parameter TRACE_BRANCH bound to: 36'b000100000000000000000000000000000000 
+	Parameter TRACE_ADDR bound to: 36'b001000000000000000000000000000000000 
+	Parameter TRACE_IRQ bound to: 36'b100000000000000000000000000000000000 
+	Parameter cpu_state_trap bound to: 8'b10000000 
+	Parameter cpu_state_fetch bound to: 8'b01000000 
+	Parameter cpu_state_ld_rs1 bound to: 8'b00100000 
+	Parameter cpu_state_ld_rs2 bound to: 8'b00010000 
+	Parameter cpu_state_exec bound to: 8'b00001000 
+	Parameter cpu_state_shift bound to: 8'b00000100 
+	Parameter cpu_state_stmem bound to: 8'b00000010 
+	Parameter cpu_state_ldmem bound to: 8'b00000001 
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_fast_mul' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2246]
+	Parameter EXTRA_MUL_FFS bound to: 0 - type: integer 
+	Parameter EXTRA_INSN_FFS bound to: 0 - type: integer 
+	Parameter MUL_CLKGATE bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2283]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_insn_valid_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2293]
+WARNING: [Synth 8-6014] Unused sequential element rs1_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2295]
+WARNING: [Synth 8-6014] Unused sequential element rs2_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2296]
+WARNING: [Synth 8-6014] Unused sequential element rd_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2302]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_fast_mul' (2#1) [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2246]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:315]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:315]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:315]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:386]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1100]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1230]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1230]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1247]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1247]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1247]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1293]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1293]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1293]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1464]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1464]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1476]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1476]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1476]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1562]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1562]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1562]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1562]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1562]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1562]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1606]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1606]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1714]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1745]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1815]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1815]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1823]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1823]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1838]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1838]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1863]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1863]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1880]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1880]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_firstword_reg_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:375]
+WARNING: [Synth 8-6014] Unused sequential element last_mem_valid_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:376]
+WARNING: [Synth 8-6014] Unused sequential element next_insn_opcode_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:416]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_secondword_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:554]
+WARNING: [Synth 8-6014] Unused sequential element prefetched_high_word_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:555]
+WARNING: [Synth 8-6014] Unused sequential element q_ascii_instr_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:760]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_imm_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:761]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_opcode_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:762]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs1_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:763]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs2_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:764]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rd_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:765]
+WARNING: [Synth 8-6014] Unused sequential element dbg_next_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:766]
+WARNING: [Synth 8-6014] Unused sequential element dbg_valid_insn_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:769]
+WARNING: [Synth 8-6014] Unused sequential element cached_ascii_instr_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:774]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_imm_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:775]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_opcode_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:777]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs1_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:780]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs2_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:781]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rd_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:782]
+WARNING: [Synth 8-6014] Unused sequential element dbg_insn_addr_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:786]
+WARNING: [Synth 8-6014] Unused sequential element clear_prefetched_high_word_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1271]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rinst_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1378]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rdata_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1379]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_wdata_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1380]
+WARNING: [Synth 8-6014] Unused sequential element alu_out_0_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1382]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1385]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_2_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1386]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1389]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1390]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1391]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1392]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1412]
+WARNING: [Synth 8-6014] Unused sequential element decoder_trigger_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1425]
+WARNING: [Synth 8-6014] Unused sequential element decoder_pseudo_trigger_q_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1427]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1443]
+WARNING: [Synth 8-6014] Unused sequential element irq_active_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1449]
+WARNING: [Synth 8-6014] Unused sequential element irq_delay_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1450]
+WARNING: [Synth 8-6014] Unused sequential element irq_mask_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1451]
+WARNING: [Synth 8-6014] Unused sequential element irq_state_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1453]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1455]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1473]
+WARNING: [Synth 8-6014] Unused sequential element irq_pending_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1934]
+INFO: [Synth 8-4471] merging register 'trace_valid_reg' into 'do_waitirq_reg' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1430]
+WARNING: [Synth 8-6014] Unused sequential element trace_valid_reg was removed.  [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1430]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (3#1) [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:57]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 22 given [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2602]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi' (4#1) [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2445]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_picorv32_tut_0_0' (5#1) [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ip/design_1_picorv32_tut_0_0/synth/design_1_picorv32_tut_0_0.v:57]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[24]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[23]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[22]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[21]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[20]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[19]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[18]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[17]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[16]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[15]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[11]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[10]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[9]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[8]
+WARNING: [Synth 8-3331] design picorv32_pcpi_fast_mul has unconnected port pcpi_insn[7]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_wr
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[31]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[30]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[29]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[28]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[27]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[26]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[25]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[24]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[23]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[22]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[21]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[20]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[19]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[18]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[17]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[16]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[15]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[14]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[13]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[12]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[11]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[10]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[9]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[8]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[7]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[6]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[5]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[4]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[3]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[2]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[1]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[0]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_wait
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_ready
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[31]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[30]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[29]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[28]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[27]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[26]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[25]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[24]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[23]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[22]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[21]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[20]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[19]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[18]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[17]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[16]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[15]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[14]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[13]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[12]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[11]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[10]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[9]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[8]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[7]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[6]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[5]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[4]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[3]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[2]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[1]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port irq[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1855.480 ; gain = 210.332 ; free physical = 10804 ; free virtual = 68630
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1861.418 ; gain = 216.270 ; free physical = 10788 ; free virtual = 68613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1861.418 ; gain = 216.270 ; free physical = 10788 ; free virtual = 68612
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2040.105 ; gain = 0.000 ; free physical = 10559 ; free virtual = 68383
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2043.074 ; gain = 2.969 ; free physical = 10513 ; free virtual = 68338
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 10672 ; free virtual = 68500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 10672 ; free virtual = 68500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 10671 ; free virtual = 68499
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'instr_waitirq_reg' into 'instr_retirq_reg' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:853]
+INFO: [Synth 8-4471] merging register 'compressed_instr_reg' into 'instr_retirq_reg' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:873]
+INFO: [Synth 8-4471] merging register 'instr_setq_reg' into 'instr_getq_reg' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1071]
+INFO: [Synth 8-4471] merging register 'instr_maskirq_reg' into 'instr_getq_reg' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1072]
+INFO: [Synth 8-4471] merging register 'instr_timer_reg' into 'instr_getq_reg' [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1073]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:1218]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 10666 ; free virtual = 68495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 13    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 82    
++---Multipliers : 
+	                33x33  Multipliers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 25    
+	   8 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 7     
+	   9 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module picorv32_axi_adapter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module picorv32_pcpi_fast_mul 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                33x33  Multipliers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+Module picorv32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 77    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 24    
+	   8 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 7     
+	   9 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 26    
+	   2 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.srcs/sources_1/bd/design_1/ipshared/3e88/src/picorv32.v:2299]
+DSP Report: Generating DSP rd0, operation Mode is: A2*B2.
+DSP Report: register rs1_reg is absorbed into DSP rd0.
+DSP Report: register rd0 is absorbed into DSP rd0.
+DSP Report: operator rd0 is absorbed into DSP rd0.
+DSP Report: operator rd0 is absorbed into DSP rd0.
+DSP Report: Generating DSP rd_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register rs2_reg is absorbed into DSP rd_reg.
+DSP Report: register rs1_reg is absorbed into DSP rd_reg.
+DSP Report: register rd_reg is absorbed into DSP rd_reg.
+DSP Report: operator rd0 is absorbed into DSP rd_reg.
+DSP Report: operator rd0 is absorbed into DSP rd_reg.
+DSP Report: Generating DSP rd0, operation Mode is: A2*B2.
+DSP Report: register rd0 is absorbed into DSP rd0.
+DSP Report: register rd0 is absorbed into DSP rd0.
+DSP Report: operator rd0 is absorbed into DSP rd0.
+DSP Report: operator rd0 is absorbed into DSP rd0.
+DSP Report: Generating DSP rd_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register rs2_reg is absorbed into DSP rd_reg.
+DSP Report: register rd_reg is absorbed into DSP rd_reg.
+DSP Report: register rd_reg is absorbed into DSP rd_reg.
+DSP Report: operator rd0 is absorbed into DSP rd_reg.
+DSP Report: operator rd0 is absorbed into DSP rd_reg.
+INFO: [Synth 8-3917] design design_1_picorv32_tut_0_0 has port mem_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_picorv32_tut_0_0 has port mem_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_picorv32_tut_0_0 has port mem_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_picorv32_tut_0_0 has port mem_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_picorv32_tut_0_0 has port mem_axi_arprot[0] driven by constant 0
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_wr
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[31]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[30]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[29]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[28]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[27]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[26]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[25]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[24]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[23]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[22]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[21]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[20]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[19]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[18]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[17]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[16]
+WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[15]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /\decoded_imm_uj_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[1]' (FDE) to 'inst/picorv32_core/decoded_rs2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[2]' (FDE) to 'inst/picorv32_core/decoded_rs2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[3]' (FDE) to 'inst/picorv32_core/decoded_rs2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[4]' (FDE) to 'inst/picorv32_core/decoded_rs2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[11]' (FDE) to 'inst/picorv32_core/decoded_rs2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[15]' (FDE) to 'inst/picorv32_core/decoded_rs1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[16]' (FDE) to 'inst/picorv32_core/decoded_rs1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[17]' (FDE) to 'inst/picorv32_core/decoded_rs1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[18]' (FDE) to 'inst/picorv32_core/decoded_rs1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[19]' (FDE) to 'inst/picorv32_core/decoded_rs1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[20]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[21]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[22]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[23]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[24]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[25]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[26]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[27]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[28]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[29]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/decoded_imm_uj_reg[30]' (FDE) to 'inst/picorv32_core/decoded_imm_uj_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /instr_retirq_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /instr_getq_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /\cpu_state_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /do_waitirq_reg)
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[0]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[1]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[2]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[3]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[4]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[5]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[6]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[7]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[8]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[9]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[10]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[11]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[12]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[13]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[14]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[15]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[16]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[17]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[18]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[19]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[20]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[21]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[22]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[23]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[24]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[25]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[26]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[27]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[28]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[29]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/eoi_reg[30]' (FDRE) to 'inst/picorv32_core/eoi_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /\eoi_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/mem_addr_reg[0]' (FDE) to 'inst/picorv32_core/mem_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /\mem_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/picorv32_core /latched_compr_reg)
+WARNING: [Synth 8-3332] Sequential element (rd_reg[47]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[46]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[45]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[44]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[43]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[42]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[41]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[40]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[39]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[38]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[37]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[36]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[35]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[34]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[33]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[32]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[31]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[30]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[29]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[28]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[27]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[26]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[25]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[24]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[23]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[22]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[21]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[20]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[19]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[18]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[17]) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[47]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[46]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[45]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[44]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[43]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[42]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[41]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[40]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[39]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[38]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[37]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[36]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[35]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[34]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[33]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[32]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[31]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[30]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[29]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[28]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[27]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[26]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[25]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[24]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[23]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[22]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[21]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[20]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[19]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[18]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+WARNING: [Synth 8-3332] Sequential element (rd_reg[17]__0) is unused and will be removed from module picorv32_pcpi_fast_mul.
+INFO: [Synth 8-3886] merging instance 'inst/picorv32_core/reg_next_pc_reg[0]' (FDRE) to 'inst/picorv32_core/reg_pc_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 10132 ; free virtual = 67979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------------+-------------+-----------+----------------------+---------------+
+|Module Name          | RTL Object  | Inference | Size (Depth x Width) | Primitives    | 
++---------------------+-------------+-----------+----------------------+---------------+
+|\inst/picorv32_core  | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++---------------------+-------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|picorv32_pcpi_fast_mul | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|picorv32_pcpi_fast_mul | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|picorv32_pcpi_fast_mul | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|picorv32_pcpi_fast_mul | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11165 ; free virtual = 69007
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11161 ; free virtual = 69004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++---------------------+-------------+-----------+----------------------+---------------+
+|Module Name          | RTL Object  | Inference | Size (Depth x Width) | Primitives    | 
++---------------------+-------------+-----------+----------------------+---------------+
+|\inst/picorv32_core  | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++---------------------+-------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11304 ; free virtual = 69147
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11191 ; free virtual = 69035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11190 ; free virtual = 69034
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11185 ; free virtual = 69029
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11179 ; free virtual = 69023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11171 ; free virtual = 69015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11170 ; free virtual = 69014
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    95|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |DSP48E1_4 |     1|
+|6     |LUT1      |     6|
+|7     |LUT2      |   146|
+|8     |LUT3      |   114|
+|9     |LUT4      |   212|
+|10    |LUT5      |   194|
+|11    |LUT6      |   470|
+|12    |RAM32M    |    12|
+|13    |FDRE      |   629|
+|14    |FDSE      |    25|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+-----------------------+------+
+|      |Instance          |Module                 |Cells |
++------+------------------+-----------------------+------+
+|1     |top               |                       |  1907|
+|2     |  inst            |picorv32_axi           |  1907|
+|3     |    axi_adapter   |picorv32_axi_adapter   |     7|
+|4     |    picorv32_core |picorv32               |  1889|
+|5     |      pcpi_mul    |picorv32_pcpi_fast_mul |   327|
++------+------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11170 ; free virtual = 69014
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 2043.074 ; gain = 216.270 ; free physical = 11214 ; free virtual = 69058
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2043.074 ; gain = 397.926 ; free physical = 11214 ; free virtual = 69058
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_picorv32_tut_0_0' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.934 ; gain = 0.000 ; free physical = 11042 ; free virtual = 68886
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:01:01 . Memory (MB): peak = 2073.934 ; gain = 659.566 ; free physical = 11150 ; free virtual = 68993
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.934 ; gain = 0.000 ; free physical = 11150 ; free virtual = 68994
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.runs/design_1_picorv32_tut_0_0_synth_1/design_1_picorv32_tut_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_picorv32_tut_0_0, cache-ID = 54751db6bd94669d
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2097.945 ; gain = 0.000 ; free physical = 11111 ; free virtual = 68957
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/uho/workspace/3retry_RISCV/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial/tutorial.runs/design_1_picorv32_tut_0_0_synth_1/design_1_picorv32_tut_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_picorv32_tut_0_0_utilization_synth.rpt -pb design_1_picorv32_tut_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 18 18:11:43 2020...

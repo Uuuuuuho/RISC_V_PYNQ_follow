@@ -1,0 +1,53 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 2600 -y 1060 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 2600 -y 1080 -defaultsOSRD
+preplace inst irqConcat -pg 1 -lvl 4 -x 2470 -y 890 -defaultsOSRD
+preplace inst porReset -pg 1 -lvl 1 -x 501 -y 500 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 501 -y 1100 -defaultsOSRD
+preplace inst psAxiInterconnect -pg 1 -lvl 2 -x 940 -y 580 -defaultsOSRD
+preplace inst psInterruptController -pg 1 -lvl 3 -x 1390 -y 420 -defaultsOSRD
+preplace inst resetSlice -pg 1 -lvl 2 -x 940 -y 870 -defaultsOSRD
+preplace inst subprocessorClk -pg 1 -lvl 3 -x 1390 -y 580 -defaultsOSRD
+preplace inst tutorialProcessor -pg 1 -lvl 3 -x 1390 -y 960 -defaultsOSRD
+preplace inst tutorialProcessor|riscvReset -pg 1 -lvl 1 -x 1500 -y 1150 -defaultsOSRD
+preplace inst tutorialProcessor|riscvBramController -pg 1 -lvl 2 -x 1860 -y 1100 -defaultsOSRD
+preplace inst tutorialProcessor|psBramController -pg 1 -lvl 2 -x 1860 -y 960 -defaultsOSRD
+preplace inst tutorialProcessor|riscvBram -pg 1 -lvl 3 -x 2110 -y 950 -defaultsOSRD
+preplace inst tutorialProcessor|picorv32_tut_0 -pg 1 -lvl 1 -x 1500 -y 960 -defaultsOSRD
+preplace netloc M02_ARESETN_1 1 1 2 760 420 1130
+preplace netloc ACLK_1 1 0 3 -30 400 770 410 1150
+preplace netloc processing_system7_0_GPIO_O 1 1 1 790 870n
+preplace netloc subprocessorClk_clk_out1 1 0 4 -20 950 NJ 950 1100 1310 2300
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 2 -10 960 730
+preplace netloc psInterruptController_irq 1 0 4 -10 1320 NJ 1320 N 1320 2310
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 -10 600 750 1130 N
+preplace netloc ARESETN_1 1 1 1 N 520
+preplace netloc tutorialProcessor_irq 1 3 1 2320 880n
+preplace netloc resetSlice_Dout 1 2 1 1120 870n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 780 480n
+preplace netloc processing_system7_0_DDR 1 1 4 740 1070 1110J 1290 2320 1060 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 1080 1090 1300 N 1300 2570
+preplace netloc S_AXI_MEM_1 1 2 1 1140 600n
+preplace netloc psAxiInterconnect_M01_AXI 1 2 1 1120 550n
+preplace netloc psAxiInterconnect_M00_AXI 1 2 1 1090 390n
+preplace netloc tutorialProcessor|riscvReset_peripheral_aresetn 1 0 2 1320 1250 1710
+preplace netloc tutorialProcessor|s_axi_aclk_0_1 1 0 2 1310J 830 1720
+preplace netloc tutorialProcessor|s_axi_aresetn_0_1 1 0 2 1320J 840 1700
+preplace netloc tutorialProcessor|ext_reset_in_0_1 1 0 1 N 1130
+preplace netloc tutorialProcessor|aux_reset_in_0_1 1 0 1 N 1150
+preplace netloc tutorialProcessor|slowest_sync_clk_0_1 1 0 2 1310 1260 1690
+preplace netloc tutorialProcessor|picorv32_tut_0_trap 1 1 3 1690J 880 NJ 880 NJ
+preplace netloc tutorialProcessor|psBramController_BRAM_PORTA 1 2 1 N 960
+preplace netloc tutorialProcessor|riscvBramController_BRAM_PORTA 1 2 1 2000 940n
+preplace netloc tutorialProcessor|Conn1 1 0 2 NJ 850 1710
+preplace netloc tutorialProcessor|picorv32_tut_0_mem_axi 1 1 1 1680 910n
+levelinfo -pg 1 -50 501 940 1390 2470 2600
+levelinfo -hier tutorialProcessor * 1500 1860 2110 *
+pagesize -pg 1 -db -bbox -sgen -50 0 2720 1580
+pagesize -hier tutorialProcessor -db -bbox -sgen 1280 820 2250 1270
+"
+}
+
